@@ -1,6 +1,6 @@
 ---
 kind: Deployment
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   namespace: default
   name: vikas-v1
@@ -34,7 +34,7 @@ spec:
         - containerPort: 80
 ---
 kind: Deployment
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   namespace: default
   name: vikas-v2
