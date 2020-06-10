@@ -12,6 +12,10 @@ variable dummy {
 
 resource null_resource echo_dummy {
   provisioner local-exec {
-    command = "echo Variable is ${var.dummy} "
+    command = "echo Variable is ${var.dummy}"
+  }
+
+  triggers = {
+    hack = "${timestamp()}"
   }
 }
